@@ -1,36 +1,13 @@
-# compojure-example
+# Clojure Ring example
 
-FIXME: description
+Minimal JSON REST API example with Clojure, Ring and Compojure
 
-## Installation
+## Running
 
-Download from http://example.com/FIXME.
+	$ lein deps
+	$ lein ring server-headless
 
-## Usage
+## Deploying
 
-FIXME: explanation
-
-    $ java -jar compojure-example-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2015 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+	$ lein ring uberjar
+	$ lein -jar target/uberjar/compojure-example-0.1.0-SNAPSHOT-standalone.jar
